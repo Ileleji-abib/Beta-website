@@ -1,0 +1,101 @@
+import "../Styles/style.css";
+import gsap from "gsap";
+import { useEffect, useRef } from "react";
+
+
+
+
+function Loaderpage({ onComplete })  {
+    const outLineref= useRef(null);
+    const fillref= useRef(null);
+    const Logoref= useRef(null);
+    const loaderRef = useRef(null);
+
+    useEffect(() => {
+
+        const tl = gsap.timeline();
+
+        tl.to(outLineref.current, {
+            strokeDashoffset: 0,
+            duration: 2,
+            ease: "power2.out",
+        });
+
+        tl.to(fillref.current, {
+          opacity: 1,
+          duration: 0.5,
+          ease: "power2.out",
+        });
+
+        tl.to(Logoref.current, {
+          scale: 1.08,
+          duration: 0.25,
+          yoyo: true,
+          repeat: 1,
+          ease: "power2.out",
+        });
+
+        tl.to(loaderRef.current, {
+          opacity: 0,
+          duration: 1.5,
+          ease: "power2.inOut",
+         onComplete: () => {
+        onComplete();
+        }
+          
+        });
+
+        
+       
+
+    }, [onComplete]);
+
+
+
+
+  
+
+
+
+
+    return(
+        <>
+            <div className="loader-page" ref={loaderRef}>
+                <div className="container">
+                    <div className="loader">
+                        <svg 
+                         ref={Logoref}
+                         className="loader-logo"
+                         width="112" 
+                         height="250" 
+                         viewBox="0 0 112 250"    
+                         fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+
+                           
+                            <path  ref={ outLineref} 
+                            className="logo-outline" d="M33.9627 26.8817V92.7419L0 126.344V53.7634L54.3403 0L99.1711 25.5376C108.952 42.7419 100.53 74.8208 95.0956 88.7097L72.0009 111.559C67.0197 106.631 53.7969 97.043 40.7552 98.1183V159.185C50.7176 158.095 71.4575 152.688 74.7179 139.785V116.935L99.1711 92.7419C114.115 111.559 114.115 138.441 108.681 157.258C103.247 176.075 81.5105 193.548 51.6233 193.548H39.3967V211.021L0 250V134.409C22.189 112.455 66.5669 67.4731 66.5669 63.172C67.0197 59.1398 67.382 49.7312 65.2084 44.3548C63.8499 38.5305 55.6988 26.8817 33.9627 26.8817Z" fill="none" stroke="#1B5259"  strokeWidth="2" strokeLinecap="round"  strokeLinejoin="round"/>
+
+                            <path   ref={fillref} 
+                            className="logo-fill" d="M33.9627 26.8817V92.7419L0 126.344V53.7634L54.3403 0L99.1711 25.5376C108.952 42.7419 100.53 74.8208 95.0956 88.7097L72.0009 111.559C67.0197 106.631 53.7969 97.043 40.7552 98.1183V159.185C50.7176 158.095 71.4575 152.688 74.7179 139.785V116.935L99.1711 92.7419C114.115 111.559 114.115 138.441 108.681 157.258C103.247 176.075 81.5105 193.548 51.6233 193.548H39.3967V211.021L0 250V134.409C22.189 112.455 66.5669 67.4731 66.5669 63.172C67.0197 59.1398 67.382 49.7312 65.2084 44.3548C63.8499 38.5305 55.6988 26.8817 33.9627 26.8817Z" fill="#1B5259"/>
+
+
+
+
+                        </svg>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+         
+        
+        
+        </>
+    )
+    
+}
+
+export default Loaderpage;

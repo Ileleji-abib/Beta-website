@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor:pointer;
+    border: none;
+    background: none;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+ height: 200vh;
+ z-index: 30;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 80px;
+    gap: 24px;
+    grid-template-rows: auto auto;
+    
+}
+
+
+
+.top-links .container, .header-section .container, .hero-section .container, .info .container, .intro2 .container, .how .container, .services .container, .future .container, .cta-section .container, .footer-section .container, .choose-us .container, .hero .container, .intro .container, .List .container, .Price-list-section .container, .pricingintro-section .container, .Qintro .container, .loader-page .container, .loader-page .container{
+   display: flex;
+   justify-content: center;
+   flex-direction: column; 
+}
+
+@media (max-width:768px) {
+    .container{
+    max-width: 1200px;
+    margin: 0;
+    padding: 0  ;   
+}
+    
+}
+
+
+
+
+
+
+
