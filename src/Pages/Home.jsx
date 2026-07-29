@@ -7,7 +7,7 @@ import Operations from "../Components/Operations";
 import Next from "../Components/Next";
 import Choice from "../Components/Choice";
 import FuturePlan from "../Components/FuturePlan";
-import CTA from "../Components/CTA";
+import Cta from "../Components/Cta";
 
 
 
@@ -24,7 +24,7 @@ function Home(){
           <Next/>
           <Choice/>
           <FuturePlan/>
-          <CTA/>
+          <Cta/>
 
         </>
 
