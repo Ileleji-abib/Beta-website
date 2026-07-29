@@ -1,13 +1,13 @@
 
 
 import HeroIntro from "../Components/HeroIntro";
-import Homehero from "../Components/HomeHero";
+import Homehero from "../Components/Homehero";
 import SecondIntro from "../Components/SecondIntro";
 import Operations from "../Components/Operations";
 import Next from "../Components/Next";
 import Choice from "../Components/Choice";
 import FuturePlan from "../Components/FuturePlan";
-import Cta from "../Components/CTA";
+import CTA from "../Components/CTA";
 
 
 
@@ -24,7 +24,7 @@ function Home(){
           <Next/>
           <Choice/>
           <FuturePlan/>
-          <Cta/>
+          <CTA/>
 
         </>
 
