@@ -180,20 +180,19 @@
 
 /*MainsecondNavbar section styling*/
 
-.second-header .container{
- background: rgba(255, 255, 255, 0.806);
- transition: 0.3s ease;
- padding-left: 30px;
- height: 56px;
- color: black;
- position: relative;
- margin-top: 30px;
- position:fixed;
- width: 100%;
- z-index:50;
- -webkit-backdrop-filter: blur(15px);
- backdrop-filter: blur(15px);
- border-right: 1px solid rgba(255, 255, 255, 0.806);
+
+.second-header{
+  position: fixed;
+  top: 35px;      /* sits below your top navbar */
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.806);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  transition: 0.3s ease;
+  height: 56px;
+  color: black;
 }
 
 
@@ -338,7 +337,7 @@
 
 /* Mobile */
 
-@media (Max-width:768px) {
+@media (max-width:768px) {
 
   .slidebar-nav{
     width: 450px;
