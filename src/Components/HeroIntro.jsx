@@ -40,8 +40,9 @@ function HeroIntro() {
           <h2 className="section-header">From Startups to Enterprises&ndash;This is how Beta
             is powering innovation
           </h2>
-          <p>Focused on building,and managing powerful digital platforms for modern businesses
-             that improves workflow, strenghten security, and simplify operations,
+         <p>
+            Focused on building,and managing powerful digital platforms for modern businesses
+            that improves workflow, strenghten security, and simplify operations,
           </p>
         </div>
 

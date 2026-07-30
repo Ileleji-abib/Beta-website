@@ -381,6 +381,7 @@
   position: relative;
   
 }
+
 .hero-section .container{
   min-height: 90vh; 
 }
@@ -413,8 +414,17 @@
   margin-bottom: 20px;
   color: white;
 }
+
  /*mobile view */
-@media (min-width: 640px) {
+@media (min-width: 768px) {
+   .hero-section{
+    min-height: 60vh;
+  }
+
+  .hero-section .container{
+   min-height: 60vh; 
+  }
+
   .title {
     font-size: 27px;
   }
@@ -615,11 +625,11 @@
   }
 
   .intro2-content h2 {
-    font-size: 34px;
+    font-size: 20px;
   }
 
   .intro2-content p {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 
