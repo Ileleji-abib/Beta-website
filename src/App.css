@@ -256,17 +256,17 @@
   border: 1px solid black;
   height: 60px;
   display: flex;
-  align-content: center;
-  position: relative;
- 
+  justify-content:space-between;
+  align-items: center;
+  padding:0 20px;
 }
 
 
 /*this styling is for the logo in the slidenav bar menu*/
 .nav-logo{
- position: absolute;
- margin-left:  500px;
- 
+  margin:auto;
+  position:static;
+
 }
 
 
@@ -280,7 +280,8 @@
 
 .nav-slide-top-nav::after{
   content: "";
-  width: 1200px;
+  width: 100%;
+  min-width: 1200px;
   height: 1px;
   background: black;
   display: block;
@@ -293,15 +294,7 @@
   margin-top: 200px;
 }
 
-.bottom::before{
- content: "";
-  width: 1150px;
-  height: 0.1px;
-  background: black;
-  display: block; 
-  margin-bottom: 4px;
-  margin: 20px;
-}
+
 
 .sidebar-links-container{
  margin-top: 20px;
@@ -310,21 +303,18 @@
 
 #menu-close-button{
   color: black;
-  position: absolute;
-  right: 30px;
   font-size:20px;
 }
 
 .x22{
   display: flex;
   gap:10px;
- 
- 
 }
 
 .placeholder{
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 5px;
   margin-top: 6px;
 }
@@ -339,14 +329,12 @@
 
 @media (max-width:768px) {
 
-  .slidebar-nav{
-    width: 450px;
+ .slidebar-nav{
+    width:100%;
+    max-width:420px;
   }
 
-  .nav-logo{
-   margin-left:140px;
-   
-  }
+  
 
   .nav-slide-top-nav::after{
     width: 450px;
