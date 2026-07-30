@@ -37,7 +37,7 @@ function HeroIntro() {
       <div className="container">
         <div className="info-box">
         <div className="info-details">
-          <h2 className="section-header">From Startups to Enterprises&ndash;This is how Beta
+          <h2 className="section-header">From Startups to Enterprises-This is how Beta
             is powering innovation
           </h2>
          <p>

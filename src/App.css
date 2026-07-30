@@ -751,7 +751,7 @@
 }
 
 .service-box{
-  margin: 30px;
+  margin: 10px;
   padding: 35px 20px;
 }
 
@@ -835,21 +835,18 @@
  
 }
 
-@media (min-width:639px){
+@media (min-width: 768px){
 
 .section-header{
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:flex-end;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:flex-end;
 }
 
 .ind-listing-content{
     gap:24px;
 }
 
-.heading{
-    font-size:2rem;
-}
 
 }
 
