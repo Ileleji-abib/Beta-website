@@ -1,3 +1,12 @@
+.-btn{
+
+    border-radius:50px;
+    text-decoration:none;
+    transition:.35s ease;
+    font-weight:600;
+    align-content: center;
+}
+
 /* hero styling*/
 
 .hero {
@@ -152,7 +161,6 @@
 .List-text{
     max-width: 600px;
     flex: 1;
-
 }
 
 .write-up2{
@@ -202,6 +210,11 @@
         max-width: 100%;
         font-size: 16px;
         margin: 20px;
+    }
+
+     .list-text{
+        max-width: 100%;
+        font-size: 16px;
     }
 
    
@@ -1119,13 +1132,21 @@
 
 
 
+
+
+
+
+
+
 /*About connect section styling*/
 /* SECTION */
 
 .intro{
     padding:120px 0;
-    
+    background:#f7f9fa;
 }
+
+/* LAYOUT */
 
 .Abt-unlock{
     display:grid;
@@ -1134,14 +1155,12 @@
     align-items:center;
 }
 
-.click-buttons{
-    padding:15px 30px;
-    border-radius:50px;
-    text-decoration:none;
-    transition:.35s ease;
-    font-weight:600;
-    align-content: center;
-}
+/* TEXT */
+
+
+
+
+
 
 .build{
     background:#1B5259;
@@ -1196,6 +1215,11 @@
     min-height:550px;
 }
 }
+
+
+
+
+        
 
 
 /*About informed section styling*/

@@ -14,7 +14,7 @@ function Aboutinformed () {
      <>
      <section class="intro">
             <div class="container">
-                <div class="hero-box">
+                <div class="informed-box">
                     <div class="section-content">
                        <div class="Abt-details">
                            

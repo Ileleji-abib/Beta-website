@@ -10,11 +10,11 @@ function Servicelist () {
      <>
      <section class="intro">
             <div class="container">
-                <div class="hero-box">
+                <div class="Servicelist3-box">
                     <div class="section-content">
                        <div class="hero-details">
                            <div class="service-intro-image-wrapper">
-                               <img src={Integration} alt="picture" />
+                               <img src={Integration} alt="picture"/>
                            </div>
                     
                            <div class="List-text">

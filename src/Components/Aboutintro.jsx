@@ -29,7 +29,7 @@ function Serviceintro () {
 
                         <div class="-btn">
                          <a href="" class="">Build With Us</a>
-                         <a href="" class="">Contact Us</a>
+                         <a href="" className="">Contact Us</a>
                         </div>
                     </div>
 
@@ -56,7 +56,7 @@ function Serviceintro () {
 
      
      
-     </>
+    </>
 
     )
 }

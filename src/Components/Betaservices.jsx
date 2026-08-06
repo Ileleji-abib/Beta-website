@@ -11,7 +11,9 @@ function Betaservices () {
           <div className="List-content">
             <div className="intro-header">
               <h2>How to implement Automation with Beta</h2>
-              <p className='subtext3'> You have built a business infrastacture and a space. Now make your  workflow easy, faster, and productive with these frameworks and guides</p>
+              <p className='subtext3'> You have built a business infrastacture and a space. Now make 
+                your  workflow easy, faster, and productive with these frameworks and guides
+              </p>
             </div>
 
             <div className="ind-listing">
@@ -33,7 +35,9 @@ function Betaservices () {
                   </div>
                   <div className="list-item-writeup">
                     <h4>Build secure Web Application</h4>
-                    <p>Custom web platforms built for performance, scalabilty and seamless user interaction.</p>
+                    <p>Custom web platforms built for performance, scalabilty and seamless user
+                      interaction.
+                    </p>
                   </div>
                 </div>
 
@@ -43,7 +47,9 @@ function Betaservices () {
                   </div>
                   <div className="list-item-writeup">
                     <h4>Smart Home integration</h4>
-                    <p>Advanced, intelligent residential security technologies for enhanced safety, connected living and remote monitoring.</p>
+                    <p>Advanced, intelligent residential security technologies for enhanced safety,
+                      connected living and remote monitoring.
+                    </p>
                   </div>
                 </div>
 
@@ -52,8 +58,10 @@ function Betaservices () {
                    <img src={Myimage2  } alt="picture" />
                   </div>
                   <div className="list-item-writeup">
-                     <h4>Smart, Secure Management Systems(SAAs)</h4>
-                     <p>Digital platforms that optimize and automate movements, tracking supply chain, workflow operations across businesses.</p>
+                    <h4>Smart, Secure Management Systems(SAAs)</h4>
+                    <p>Digital platforms that optimize and automate movements, tracking supply
+                      chain, workflow operations across businesses.
+                    </p>
                   </div>
                 </div>
 
@@ -63,7 +71,9 @@ function Betaservices () {
                   </div>
                   <div className="list-item-writeup">
                     <h4>IOT Device integration</h4>
-                    <p>Seamless connection and Management of smart devices within businesses and residential environments.</p>
+                    <p>Seamless connection and Management of smart devices within businesses and
+                      residential environments.
+                    </p>
                   </div>
                 </div>
 

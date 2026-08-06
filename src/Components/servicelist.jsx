@@ -7,13 +7,13 @@ function Servicelist () {
      <>
        <section className="intro">
             <div className="container">
-                <div class="hero-box">
+                <div class="Servicelist-box">
                     <div class="section-content">
                        <div class="hero-details">
                            <div class="service-intro-image-wrapper">
                               <img src={Appdev} alt="picture" />
                            </div>
-                        <div class="List-text">
+                        <div className="List-text">
                             <h1 class="">Building digital platforms and experiences that drive 
                                 innovation
                             </h1>

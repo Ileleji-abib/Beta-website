@@ -118,13 +118,6 @@ function MainsecondNavbar (){
                                     </div>
                                     <p className="logotext">Beta</p>
                                 </div>
-
-                                
-
-
-
-                                
-
                             </div>
 
                                

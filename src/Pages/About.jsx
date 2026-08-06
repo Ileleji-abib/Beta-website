@@ -8,8 +8,8 @@ function About() {
         <>
         <Abouthero/>
         <Aboutintro/>
-        <Aboutinformed/>
         <Aboutconnect/>
+        <Aboutinformed/>
         <Aboutcommitment/>
           
         

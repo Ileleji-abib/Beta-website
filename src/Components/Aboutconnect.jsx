@@ -8,9 +8,9 @@ import HeroVideo from '../assets/HeroVideo.mp4';
 function Aboutconnect () {
     return(
      <>
-     <section class="intro">
+     <section class="connect-intro">
             <div class="container">
-                <div class="hero-box">
+                <div class="">
                     <div class="section-content">
                        <div class="Abt-unlock">
                            

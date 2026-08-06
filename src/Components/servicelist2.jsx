@@ -11,7 +11,7 @@ function Servicelist () {
      <>
      <section class="intro">
             <div class="container">
-                <div class="hero-box">
+                <div class="Servicelist2-box">
                     <div class="section-content">
                        <div class="hero-details">               
                            <div class="List-text">

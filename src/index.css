@@ -40,7 +40,7 @@ body{
 
 
 
-.top-links .container, .header-section .container, .hero-section .container, .info .container, .intro2 .container, .how .container, .services .container, .future .container, .cta-section .container, .footer-section .container, .choose-us .container, .hero .container, .intro .container, .List .container, .Price-list-section .container, .pricingintro-section .container, .Qintro .container, .loader-page .container, .loader-page .container{
+.top-links .container, .header-section .container, .hero-section .container, .info .container, .intro2 .container, .how .container, .services .container, .future .container, .cta-section .container, .footer-section .container, .choose-us .container, .hero .container, .intro .container, .List .container, .Price-list-section .container, .pricingintro-section .container, .Qintro .container, .loader-page .container, .loader-page .container, .connect-intro .container{
    display: flex;
    justify-content: center;
    flex-direction: column; 

@@ -6,10 +6,10 @@ function Homehero(){
   return(
     <>
       <section className="hero-section">
-        <div className="container">
+        <div className="story">
           <div className="hero-box">
             <div className="hero-section-details">
-              <div className="intro">
+              <div className="intro5">
                     <div className="intro-logo">
                       <img src={null} alt="hero" />
                       <img src={null} alt="hero" />

@@ -190,6 +190,7 @@
   transition: 0.3s ease;
   height: 56px;
   color: black;
+  
 }
 
 
@@ -356,23 +357,25 @@
 
 /*Homehero styling section */
 
-.hero-section{
-  min-height: 90vh; 
+.hero-box{
   background-image: url("assets/x23.jpg");
+  width: 100%;
+  height: 100vh;
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
-  position: relative;
-  
+  z-index: 1;
+  align-items: center;
 }
 
-.hero-section .container{
-  min-height: 90vh; 
+.intro5{
+  padding:120px 0;
+    
 }
-
-.intro{
-  padding: 35px 25px;
- 
+.title {
+  font-size: 24px;
+  line-height: 1.3;
+  font-weight: 700;
+  color: white;
 }
 
 .hero-section-details{
@@ -382,50 +385,16 @@
   position: relative;
 } 
 
-
-
-.hero-section::before{
- content: "";
- position: absolute;
- inset: 0;
- background: rgb(0, 0, 0,0.3);
-}
-
-.title {
-  font-size: 24px;
-  line-height: 1.3;
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: white;
-}
-
- /*mobile view */
-@media (min-width: 768px) {
-   .hero-section{
-    min-height: 60vh;
-  }
-
-  .hero-section .container{
-   min-height: 60vh; 
-  }
-
+@media (min-width: 768px) { 
   .title {
     font-size: 27px;
   }
 
-  .hero-btn {
-    flex-direction: row;
-    justify-content: center;
+ 
   }
-
-  .intro {
-    padding: 40px 30px;
-  }
-}
-
 @media (min-width: 1024px) {
   .title {
-    font-size: 48px;
+    font-size: 2.3rem;
   }
 
   .intro {
@@ -445,7 +414,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
-  margin-top: 20px;
+  margin-top: 5%
 }
 
 .section-header {
