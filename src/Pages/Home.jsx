@@ -20,7 +20,7 @@ function Home(){
            <HeroIntro/>
            <SecondIntro/>
            <Operations/>
-           
+           <Next/>
            <Choice/>
            <FuturePlan/>
            <Cta/>

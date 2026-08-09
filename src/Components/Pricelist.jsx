@@ -16,7 +16,9 @@ function Pricelist(){
 
                             <div className="p-header">
                              <h2>Flexible Solutions For Every Stage</h2>
-                             <p>Every project is unique which is why our pricing combines transparency, scalability, and expert support</p>
+                               <p> Every project is unique which is why our pricing combines 
+                                 transparency, scalability, and expert support
+                                </p>
                             </div>
                             
                         </div>
@@ -30,7 +32,9 @@ function Pricelist(){
                                     <div className="top-info">
                                        <h4> Starter plan </h4>
                                        <p className="price">$50</p>
-                                        <p className="price-intro">Perfect for small teams, startups, and growing businesses</p>
+                                        <p className="price-intro">Perfect for small teams,
+                                            startups, and growing businesses
+                                        </p>
                                     </div>
 
                                     <div class="p-hero-btn">
@@ -46,12 +50,18 @@ function Pricelist(){
                                         </div>
                                         <div className="features-list-container">
                                             <ul className="features-list-content">
-                                                <li className="feature-list">Professional business website</li>
+                                                <li className="feature-list">Professional business
+                                                    website
+                                                </li>
                                                 <li className="feature-list">Mobile-responsive</li>
                                                 <li className="feature-list">SEO Optimization</li>
-                                                <li className="feature-list">Hosting and deployment</li>
+                                                <li className="feature-list">Hosting and
+                                                 deployment
+                                                </li>
                                                 <li className="feature-list">24/7 Security</li>
-                                                <li className="feature-list">Performance optimization</li>
+                                                <li className="feature-list">Performance 
+                                                 optimization
+                                                </li>
                                                 <li className="feature-list">Technical support</li>
                                             </ul>
                                         </div>

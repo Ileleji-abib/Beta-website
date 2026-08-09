@@ -5,7 +5,7 @@ function Next(){
     <>
     <section className="services">
       <div className="container">
-        <div className="service-box">
+        <div className="">
           <div className="service-section-content">
             <div className="section-header">
               <div className="topic">
