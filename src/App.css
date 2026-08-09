@@ -65,114 +65,240 @@
 
 
 /*MainNavbar section styling*/
-.section-head{
-  position:fixed;
+.section-head {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  z-index:100;
+  z-index: 100;
   color: #fff;
-  background-color: rgb(48, 47, 47); 
-  padding: 5px;
-  display:flex;
-  justify-content:flex-end;
-  align-items:center;
-
+  background-color: rgb(48, 47, 47);
+  padding: 5px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
 }
 
-.section-head .container{
-  display:flex;
-  justify-content:flex-end;
-  align-items:center;
-  margin-top:10px ;
-  display: fixed;
+.section-head .container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
 }
 
-.top-menu-links{
-  display:flex;
-  justify-content:flex-end;
-  align-items:center;
-  gap:20px;
+.top-menu-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
 }
 
-
-
-
-
-
-.language-drop-down-menu{
+.language-drop-down-menu {
   background: white;
-  color:black;
+  color: black;
   position: absolute;
-  left: 1px;
+  left: 0;
   top: 100%;
-  z-index: 1000; 
+  z-index: 1000;
 }
 
-
-
-
-.language-drop-down-menu ul li{
+.language-drop-down-menu ul li {
   width: 100px;
   padding: 10px;
 }
 
-
-.list-items{
+.list-items {
   margin-right: 10px;
   width: 100px;
   position: relative;
 }
 
-
-
-.list-links{
+.list-links {
   color: #fff;
 }
 
 
-/* Mobile */
+/* =================================
+   SMALL MOBILE
+   320px - 479px
+================================= */
 
-@media (Max-width:768px) {
+@media (max-width: 479px) {
 
-  .section-head{
-    max-width: 1200px;
+  .section-head {
+    padding: 5px 10px;
+    justify-content: center;
+  }
+
+  .section-head .container {
+    justify-content: center;
+    margin-top: 5px;
+  }
+
+  .nav-top {
     width: 100%;
-    display:flex;
-    justify-content:flex-end;
-    align-items:center;
-    margin-bottom:10px;
-  }
-
-  .nav-top{
-    margin-left: 0;
-    height: 100%;
+    margin: 0;
     position: relative;
-    left: 40px;
-    top:7px ;
-    right: 40px;
-    bottom: 7px;
   }
 
-  
-  .list-items{
-   margin-right: 40px;
+  .top-menu-links {
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
   }
 
-  
-}
+  .list-items {
+    width: auto;
+    margin-right: 5px;
+  }
 
-@media (max-width:639px){
-
-.nav-top{
-  width:100%;
-  margin:0;
-}
-
-.top-menu-links{
-    justify-content:center;
-    gap:15px;
+  .language-drop-down-menu ul li {
+    width: 90px;
+    padding: 8px;
+  }
 }
 
 
+/* =================================
+   MOBILE
+   480px - 639px
+================================= */
+
+@media (min-width: 480px) and (max-width: 639px) {
+
+  .section-head {
+    padding: 5px 15px;
+    justify-content: center;
+  }
+
+  .section-head .container {
+    justify-content: center;
+  }
+
+  .nav-top {
+    width: 100%;
+    margin: 0;
+    position: relative;
+  }
+
+  .top-menu-links {
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .list-items {
+    margin-right: 10px;
+    width: auto;
+  }
+}
+
+
+/* =================================
+   TABLET
+   640px - 767px
+================================= */
+
+@media (min-width: 640px) and (max-width: 767px) {
+
+  .section-head {
+    padding: 5px 20px;
+  }
+
+  .section-head .container {
+    justify-content: flex-end;
+  }
+
+  .nav-top {
+    width: auto;
+    position: relative;
+  }
+
+  .top-menu-links {
+    justify-content: flex-end;
+    gap: 15px;
+  }
+
+  .list-items {
+    margin-right: 15px;
+    width: 100px;
+  }
+}
+
+
+/* =================================
+   TABLET / SMALL LAPTOP
+   768px - 991px
+================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .section-head {
+    padding: 5px 30px;
+  }
+
+  .section-head .container {
+    justify-content: flex-end;
+  }
+
+  .top-menu-links {
+    gap: 18px;
+  }
+
+  .list-items {
+    margin-right: 15px;
+  }
+}
+
+
+/* =================================
+   LAPTOP / DESKTOP
+   992px - 1199px
+================================= */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .section-head {
+    padding: 5px 40px;
+  }
+
+  .top-menu-links {
+    gap: 20px;
+  }
+
+  .list-items {
+    margin-right: 20px;
+  }
+}
+
+
+/* =================================
+   LARGE DESKTOP
+   1200px and above
+================================= */
+
+@media (min-width: 1200px) {
+
+  .section-head {
+    padding: 5px 50px;
+  }
+
+  .section-head .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .top-menu-links {
+    gap: 25px;
+  }
+
+  .list-items {
+    margin-right: 20px;
+  }
 }
 
 /*MainsecondNavbar section styling*/
