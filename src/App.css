@@ -131,7 +131,7 @@
 
 /* Mobile */
 
-@media (max-width:768px) {
+@media (Max-width:768px) {
 
   .section-head{
     max-width: 1200px;
@@ -160,7 +160,7 @@
   
 }
 
-@media (min-width:639px){
+@media (max-width:639px){
 
 .nav-top{
   width:100%;
@@ -169,7 +169,7 @@
 
 .top-menu-links{
     justify-content:center;
-    gap:5px;
+    gap:15px;
 }
 
 
@@ -786,6 +786,7 @@
 
 .ind-image{
  aspect-ratio: 16/9;
+ position: relative;
 
  background-position: center;
  background-repeat: no-repeat;
