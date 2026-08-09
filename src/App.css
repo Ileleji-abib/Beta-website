@@ -131,7 +131,7 @@
 
 /* Mobile */
 
-@media (Max-width:768px) {
+@media (Min-width:1024) {
 
   .section-head{
     max-width: 1200px;
@@ -160,7 +160,7 @@
   
 }
 
-@media (max-width:639px){
+@media (min-width:768px){
 
 .nav-top{
   width:100%;
@@ -325,7 +325,7 @@
 
 /* Mobile */
 
-@media (max-width:768px) {
+@media (min-width:768px) {
 
  .slidebar-nav{
     width:100%;
