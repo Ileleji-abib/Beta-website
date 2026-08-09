@@ -17,7 +17,7 @@ function Home(){
     return(
         <>
           
-          <Homehero/>
+         
           <HeroIntro/>
           <SecondIntro/>
           <Operations/>
