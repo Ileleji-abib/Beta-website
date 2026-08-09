@@ -6,10 +6,10 @@ function Next(){
     <section className="services">
       <div className="container">
         <div className="">
-          <div className="service-section-content">
+          <div className="">
             <div className="section-header">
-              <div className="topic">
-                <h2 className="section-header">Egineering innovation in every industry</h2>
+              <div className="">
+                <h2 className="">Egineering innovation in every industry</h2>
                 <p className="text">Discover how Beta helps organizations in
                   every sector build, scale, and transform.</p>
               </div>
