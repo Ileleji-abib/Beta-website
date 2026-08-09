@@ -19,6 +19,7 @@ function Home(){
            <Homehero/>
            <HeroIntro/>
            <SecondIntro/>
+           <Operations/>
           
         </>
 
