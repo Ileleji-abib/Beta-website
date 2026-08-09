@@ -23,6 +23,8 @@ function Home(){
            
            <Choice/>
            <FuturePlan/>
+           <Cta/>
+
           
         </>
 
