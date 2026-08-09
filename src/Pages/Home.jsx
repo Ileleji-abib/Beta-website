@@ -22,6 +22,7 @@ function Home(){
            <Operations/>
            
            <Choice/>
+           <FuturePlan/>
           
         </>
 
