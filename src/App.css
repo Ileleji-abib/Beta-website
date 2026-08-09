@@ -304,9 +304,9 @@
 /*MainsecondNavbar section styling*/
 
 
-.second-header{
+.second-header {
   position: fixed;
-  top: 35px;      /* sits below your top navbar */
+  top: 35px;
   left: 0;
   width: 100%;
   z-index: 50;
@@ -316,165 +316,309 @@
   transition: 0.3s ease;
   height: 56px;
   color: black;
-  
 }
 
 
+/* ==============================
+   SIDEBAR
+================================ */
 
+.slidebar-nav {
+  background: rgba(255, 255, 255, 0.806);
+  color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
 
-.slidebar-nav{
-  background: rgba(255,255,255,.806);
-  color:#000;
+  /* Responsive width */
+  width: min(1200px, 100%);
 
-  position:fixed;
-  top:0;
-  left:0;
+  height: 100vh;
 
-  width:1200px;
-  height:100vh;
+  display: flex;
+  flex-direction: column;
 
-  display:flex;
-  flex-direction:column;
+  z-index: 9999;
 
-  z-index:9999;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
 
-  backdrop-filter:blur(15px);
-  -webkit-backdrop-filter:blur(15px);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
 
-  transform:translateX(-100%);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 
-.sidebar-links-container{
+/* ==============================
+   SIDEBAR CONTENT
+================================ */
+
+.sidebar-links-container {
   width: 100%;
+  margin-top: 20px;
+  color: black;
 }
 
-
-
-.sidebar-links-items{
+.sidebar-links-items {
   margin-bottom: 30px;
-  
 }
 
-.slide-nav-links{
- color: #000000;
- margin: 20px;
+.slide-nav-links {
+  color: #000;
+  margin: 20px;
 }
 
-
-.slide-language-drop-down{
+.slide-language-drop-down {
   position: absolute;
   background-color: #fff;
   z-index: 1000;
- 
 }
 
-.slide-language-drop-down ul li{
+.slide-language-drop-down ul li {
   width: 100px;
   padding: 10px;
 }
 
 
+/* ==============================
+   SIDEBAR HEADER
+================================ */
 
-.slide-header{
+.slide-header {
   border: 1px solid black;
-  height: 60px;
+  min-height: 60px;
+
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
-  padding:0 20px;
+
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 
-/*this styling is for the logo in the slidenav bar menu*/
-.nav-logo{
-  margin:auto;
-  position:static;
+/* Logo */
 
+.nav-logo {
+  margin: auto;
+  position: static;
 }
 
 
-.slide-nav-top-menu-links{
+/* Top menu */
+
+.slide-nav-top-menu-links {
   display: flex;
   justify-content: space-around;
-  margin: 5px;
   align-items: center;
-  margin-right: 50px;
+
+  margin: 5px 50px 5px 5px;
 }
 
-.nav-slide-top-nav::after{
+.nav-slide-top-nav::after {
   content: "";
   width: 100%;
-  min-width: 1200px;
+  max-width: 1200px;
   height: 1px;
+
   background: black;
+
   display: block;
-  margin: 10px auto 0;  
+  margin: 10px auto 0;
 }
 
 
+/* ==============================
+   OTHER ELEMENTS
+================================ */
 
-.bottom{
+.bottom {
   margin-top: 200px;
 }
 
-
-
-.sidebar-links-container{
- margin-top: 20px;
- color:black;
-}
-
-#menu-close-button{
+#menu-close-button {
   color: black;
-  font-size:20px;
+  font-size: 20px;
 }
 
-.x22{
+.x22 {
   display: flex;
-  gap:10px;
+  gap: 10px;
 }
 
-.placeholder{
+.placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
+
   padding: 5px;
   margin-top: 6px;
 }
 
-.logo-section{
+.logo-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* Mobile */
 
-@media (max-width:768px) {
+/* ==============================
+   SMALL MOBILE
+   320px - 479px
+================================ */
 
- .slidebar-nav{
-    width:100%;
-    max-width:420px;
+@media (max-width: 479px) {
+
+  .second-header {
+    top: 35px;
+    height: 52px;
   }
 
-  
-
-  .nav-slide-top-nav::after{
-    width: 450px;
+  .slidebar-nav {
+    width: 100%;
+    max-width: 100%;
   }
 
-  .bottom::before{
-    width: 400px; 
+  .slide-header {
+    min-height: 55px;
+    padding: 0 12px;
+  }
+
+  .slide-nav-top-menu-links {
+    margin-right: 10px;
+    gap: 5px;
+  }
+
+  .sidebar-links-items {
+    margin-bottom: 20px;
+  }
+
+  .slide-nav-links {
+    margin: 15px;
+  }
+
+  .nav-slide-top-nav::after {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .bottom {
+    margin-top: 100px;
   }
 }
 
-@media (min-width: 1024px){
-  .slidebar-nav{
-    width: 1200px;
+
+/* ==============================
+   MOBILE
+   480px - 639px
+================================ */
+
+@media (min-width: 480px) and (max-width: 639px) {
+
+  .slidebar-nav {
+    width: 100%;
+    max-width: 420px;
   }
 
-  
+  .slide-header {
+    padding: 0 15px;
+  }
+
+  .slide-nav-top-menu-links {
+    margin-right: 20px;
+  }
+
+  .nav-slide-top-nav::after {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .bottom {
+    margin-top: 120px;
+  }
+}
+
+
+/* ==============================
+   TABLET
+   640px - 767px
+================================ */
+
+@media (min-width: 640px) and (max-width: 767px) {
+
+  .slidebar-nav {
+    width: 80%;
+    max-width: 500px;
+  }
+
+  .nav-slide-top-nav::after {
+    width: 100%;
+  }
+
+  .bottom {
+    margin-top: 150px;
+  }
+}
+
+
+/* ==============================
+   TABLET
+   768px - 1023px
+================================ */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .slidebar-nav {
+    width: 70%;
+    max-width: 600px;
+  }
+
+  .nav-slide-top-nav::after {
+    width: 100%;
+  }
+
+  .bottom {
+    margin-top: 180px;
+  }
+}
+
+
+/* ==============================
+   DESKTOP
+   1024px - 1199px
+================================ */
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+
+  .slidebar-nav {
+    width: 80%;
+    max-width: 900px;
+  }
+
+  .nav-slide-top-nav::after {
+    width: 100%;
+  }
+}
+
+
+/* ==============================
+   LARGE DESKTOP
+   1200px+
+================================ */
+
+@media (min-width: 1200px) {
+
+  .slidebar-nav {
+    width: 1200px;
+    max-width: 1200px;
+  }
+
+  .nav-slide-top-nav::after {
+    width: 100%;
+    max-width: 1200px;
+  }
 }
 
 
