@@ -616,51 +616,76 @@
 
 
 /*pricing page style */
-.p-hero-btn{
+
+/* =========================================================
+   PRICING HERO BUTTON
+   ========================================================= */
+
+.p-hero-btn {
     text-align: center;
-    background:  rgb(9, 75, 53);
+    background: rgb(9, 75, 53);
     padding: 5px 7px;
     border-radius: 7px;
     cursor: pointer;
 }
 
-.features{
-    margin-top: 17px;
-}
-
-.ft-header p{
-   font-weight: bold;
-}
-
-.features-list-container{
-    margin-top: 10px;
-}
-
-.p-hero-btn a{
+.p-hero-btn a {
     color: white;
     cursor: pointer;
     text-align: center;
 }
 
-.Price-list-section{
- padding: 25px 35px;
- z-index: 1;
- position: relative;
- overflow: hidden;
- padding: 25px 35px;
- 
-   background:
-        
-       radial-gradient(circle at 20% 20%, rgba(34, 197, 94, 0.25), transparent 45%),
-        radial-gradient(circle at 80% 70%, rgba(16, 185, 129, 0.25), transparent 45%),
-        linear-gradient(
-            135deg, 
-            #020617, 
-            #0f172a, 
-            #1e293b
-            
-            );      
+
+/* =========================================================
+   FEATURES
+   ========================================================= */
+
+.features {
+    margin-top: 17px;
 }
+
+.ft-header p {
+    font-weight: bold;
+}
+
+.features-list-container {
+    margin-top: 10px;
+}
+
+
+/* =========================================================
+   PRICING SECTION
+   ========================================================= */
+
+.Price-list-section {
+    padding: 25px 35px;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(34, 197, 94, 0.25),
+            transparent 45%
+        ),
+        radial-gradient(
+            circle at 80% 70%,
+            rgba(16, 185, 129, 0.25),
+            transparent 45%
+        ),
+        linear-gradient(
+            135deg,
+            #020617,
+            #0f172a,
+            #1e293b
+        );
+}
+
+
+/* =========================================================
+   MOVING GREEN GLOW
+   ========================================================= */
 
 .Price-list-section::before {
     content: "";
@@ -690,6 +715,7 @@
 }
 
 @keyframes moveGlow {
+
     from {
         transform: translateX(0);
     }
@@ -697,95 +723,128 @@
     to {
         transform: translateX(calc(100vw + 800px));
     }
+
 }
 
 
+/* =========================================================
+   PRICE HEADER
+   ========================================================= */
 
-.price-box{
+.price-box {
     text-align: center;
     margin-top: 110px;
 }
 
-.price-list-grid-content{
-     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-    padding:25px;
-}
-
-
-
-.feauture-header{
+.feauture-header {
     background: rgba(16, 6, 6, 0.388);
     color: white;
+
     width: fit-content;
     margin: auto;
+
     padding: 10px;
     border-radius: 30px;
+
     z-index: 3;
+
     display: flex;
     gap: 6px;
 }
 
-.p-header{
-   line-height: 2.3;
+.p-header {
+    line-height: 2.3;
 }
 
-.p-header h2{
-   color: white; 
+.p-header h2 {
+    color: white;
 }
 
-.p-header p{
-   color: rgba(252, 250, 250, 0.66);
-
+.p-header p {
+    color: rgba(252, 250, 250, 0.66);
 }
 
-.price-plan-card{
-   background: oklab(98.212% 0 -0.00011);
-   height: 100%;
-   margin: 20px;
-   min-height:420px;
-   border-radius: 20px;
-   width: 300px;
+
+/* =========================================================
+   PRICING GRID
+   ========================================================= */
+
+.price-list-grid-content {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    padding: 25px;
 }
 
-.trio{
+
+/* =========================================================
+   PRICE CARD
+   ========================================================= */
+
+.price-plan-card {
+    background: oklab(98.212% 0 -0.00011);
+
+    height: 100%;
+    min-height: 420px;
+
+    margin: 20px;
+
+    border-radius: 20px;
+
+    width: 300px;
+
+    justify-self: center;
+}
+
+
+/* =========================================================
+   CARD HEADER
+   ========================================================= */
+
+.trio {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.trio span{
+.trio span {
     font-size: 14px;
+
     background: rgb(211, 213, 213);
+
     padding: 6px 4px;
+
     border-radius: 20px;
+
     display: flex;
-    color:rgb(9, 75, 53);
-    border:1px solid rgb(9, 75, 53); 
-    font-weight: bold;  
-}
 
+    color: rgb(9, 75, 53);
 
+    border: 1px solid rgb(9, 75, 53);
 
-.price-offer{
-    height: 300px; 
-    margin: 30px;
-}
-
-.price{
-    font-size: 40px;
-    margin-bottom: 3px;
-    margin-top: 7px;
     font-weight: bold;
 }
 
-.top-info h4{
-    font-size: 20px;
+
+/* =========================================================
+   PRICE CONTENT
+   ========================================================= */
+
+.price-offer {
+    height: 300px;
+    margin: 30px;
 }
 
-.price-intro{
-    font-size: 14px;
+.price {
+    font-size: 40px;
+
+    margin-top: 7px;
+    margin-bottom: 3px;
+
+    font-weight: bold;
 }
 
 .top-info {
@@ -793,42 +852,285 @@
     margin-bottom: 30px;
 }
 
-.feature-list{
+.top-info h4 {
+    font-size: 20px;
+}
+
+.price-intro {
+    font-size: 14px;
+}
+
+.feature-list {
     margin-bottom: 3px;
 }
 
-@media (min-width:640px) and (max-width:1023px){
 
-.price-list-grid-content{
-    grid-template-columns:repeat(2,1fr);
+/* =========================================================
+   0px → 479px
+   EXTRA SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 479px) {
+
+    .Price-list-section {
+        padding: 25px 12px;
+    }
+
+    .price-box {
+        margin-top: 45px;
+    }
+
+    .feauture-header {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .p-header {
+        line-height: 1.8;
+    }
+
+    .p-header h2 {
+        font-size: 1.7rem;
+    }
+
+    .p-header p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .price-list-grid-content {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+        padding: 15px 5px;
+    }
+
+    .price-plan-card {
+        width: 100%;
+        max-width: 320px;
+
+        margin: 10px auto;
+
+        min-height: 400px;
+    }
+
+    .price-offer {
+        margin: 25px;
+    }
+
+    .price {
+        font-size: 34px;
+    }
+
+    .top-info h4 {
+        font-size: 18px;
+    }
+
+    .price-intro {
+        font-size: 13px;
+    }
+
 }
 
-.price-plan-card{
-    width:320px;
-    margin:0;
+
+/* =========================================================
+   480px → 639px
+   LARGE PHONES
+   ========================================================= */
+
+@media (min-width: 480px) and (max-width: 639px) {
+
+    .Price-list-section {
+        padding: 30px 18px;
+    }
+
+    .price-box {
+        margin-top: 55px;
+    }
+
+    .p-header h2 {
+        font-size: 2rem;
+    }
+
+    .p-header p {
+        font-size: 0.95rem;
+    }
+
+    .price-list-grid-content {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        padding: 20px 10px;
+    }
+
+    .price-plan-card {
+        width: 100%;
+        max-width: 340px;
+
+        margin: 10px auto;
+    }
+
+    .price {
+        font-size: 36px;
+    }
+
 }
 
-.price-box{
-    margin-top:80px;
+
+/* =========================================================
+   640px → 767px
+   SMALL TABLETS
+   ========================================================= */
+
+@media (min-width: 640px) and (max-width: 767px) {
+
+    .Price-list-section {
+        padding: 35px 22px;
+    }
+
+    .price-box {
+        margin-top: 65px;
+    }
+
+    .p-header h2 {
+        font-size: 2.1rem;
+    }
+
+    .price-list-grid-content {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        padding: 25px 15px;
+    }
+
+    .price-plan-card {
+        width: 340px;
+        margin: 0 auto;
+    }
+
 }
 
-.Price-list-section{
-    padding:40px 25px;
+
+/* =========================================================
+   768px → 1023px
+   LARGE TABLETS
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .Price-list-section {
+        padding: 40px 25px;
+    }
+
+    .price-box {
+        margin-top: 80px;
+    }
+
+    .p-header h2 {
+        font-size: 2rem;
+    }
+
+    .p-header p {
+        font-size: 1rem;
+    }
+
+    .price-list-grid-content {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 25px;
+
+        padding: 25px 10px;
+    }
+
+    .price-plan-card {
+        width: 100%;
+        max-width: 320px;
+
+        margin: 0 auto;
+    }
+
 }
 
-.p-header h2{
-    font-size:2rem;
-}
+
+/* =========================================================
+   1024px → 1199px
+   LAPTOP / SMALL DESKTOP
+   ========================================================= */
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+
+    .Price-list-section {
+        padding: 40px 30px;
+    }
+
+    .price-box {
+        margin-top: 90px;
+    }
+
+    .p-header h2 {
+        font-size: 2.3rem;
+    }
+
+    .price-list-grid-content {
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 20px;
+
+        padding: 25px 10px;
+    }
+
+    .price-plan-card {
+        width: 100%;
+        max-width: 300px;
+
+        margin: 10px auto;
+    }
 
 }
 
-@media (max-width:639px){
 
-.price-list-grid-content{
-    grid-template-columns:1fr;
+/* =========================================================
+   1200px+
+   LARGE DESKTOP
+   ========================================================= */
+
+@media (min-width: 1200px) {
+
+    .Price-list-section {
+        padding: 45px 35px;
+    }
+
+    .price-box {
+        margin-top: 110px;
+    }
+
+    .p-header h2 {
+        font-size: 2.6rem;
+    }
+
+    .p-header p {
+        font-size: 1rem;
+    }
+
+    .price-list-grid-content {
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 25px;
+
+        padding: 25px;
+    }
+
+    .price-plan-card {
+        width: 300px;
+        margin: 20px auto;
+    }
+
 }
 
-}
+
 
 
 
