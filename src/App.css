@@ -927,6 +927,11 @@
   border-radius: 20px;
 }
 
+.intro2-box::before{ inset:0; content:""; 
+  position: absolute;
+  background: rgba(54, 53, 53, 0.4); 
+  border-radius: 20px;
+}
 
 /* ==============================
    CONTENT
@@ -983,6 +988,7 @@
   line-height: 1.5;
 
   margin: 24px 0 50px;
+  margin-top: 50px;
 
   text-align: center;
 }
