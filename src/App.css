@@ -340,8 +340,9 @@
 
   z-index: 9999;
 
-  backdrop-filter: blur(15px);
+
   -webkit-backdrop-filter: blur(15px);
+   backdrop-filter: blur(15px);
 
   transform: translateX(-100%);
   transition: transform 0.3s ease;
