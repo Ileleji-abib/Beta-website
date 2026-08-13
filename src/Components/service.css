@@ -1640,7 +1640,17 @@
 
 @media (max-width: 479px) {
 
+    .intro {
+        padding: 70px 10px;
+    }
+
+    .Abt-unlock {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
     .service-intro-video-wrapper {
+        width: 100%;
         aspect-ratio: 11 / 16;
         border-radius: 28px;
     }
@@ -1653,14 +1663,19 @@
 }
 
 
-/* =========================================================
-   LARGE PHONES
-   480px → 639px
-   ========================================================= */
-
 @media (min-width: 480px) and (max-width: 639px) {
 
+    .intro {
+        padding: 80px 15px;
+    }
+
+    .Abt-unlock {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
     .service-intro-video-wrapper {
+        width: 100%;
         aspect-ratio: 11 / 16;
         border-radius: 28px;
     }
