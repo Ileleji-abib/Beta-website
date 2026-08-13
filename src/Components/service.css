@@ -1618,56 +1618,6 @@
 /*About connect section styling*/
 /* SECTION */
 
-/* =========================================================
-   BASE STYLES
-   ========================================================= */
-
-.intro {
-    padding: 80px 0;
-    background: #f7f9fa;
-}
-
-
-/* =========================================================
-   LAYOUT
-   ========================================================= */
-
-.Abt-unlock {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 35px;
-    align-items: center;
-}
-
-
-/* =========================================================
-   BUTTONS
-   ========================================================= */
-
-.build {
-    background: #1B5259;
-    color: #fff;
-}
-
-.build:hover {
-    background: #163f45;
-}
-
-.contact {
-    border: 2px solid #1B5259;
-    color: #1B5259;
-}
-
-.contact:hover {
-    background: #1B5259;
-    color: #fff;
-}
-
-
-/* =========================================================
-   VIDEO
-   ========================================================= */
-
 .service-intro-video-wrapper {
     width: 100%;
     border-radius: 24px;
@@ -1684,124 +1634,89 @@
 
 
 /* =========================================================
-   0px → 479px
    EXTRA SMALL PHONES
+   0px → 479px
    ========================================================= */
 
 @media (max-width: 479px) {
 
-    .intro {
-        padding: 70px 15px;
-    }
-
-    .Abt-unlock {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
     .service-intro-video-wrapper {
-        border-radius: 16px;
+        aspect-ratio: 11 / 16;
+        border-radius: 28px;
     }
 
     .hero-video {
-        min-height: 250px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
 
 /* =========================================================
-   480px → 639px
    LARGE PHONES
+   480px → 639px
    ========================================================= */
 
 @media (min-width: 480px) and (max-width: 639px) {
 
-    .intro {
-        padding: 80px 20px;
-    }
-
-    .Abt-unlock {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
     .service-intro-video-wrapper {
-        border-radius: 18px;
+        aspect-ratio: 11 / 16;
+        border-radius: 28px;
     }
 
     .hero-video {
-        min-height: 300px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
 
 /* =========================================================
-   640px → 767px
    SMALL TABLETS
+   640px → 767px
    ========================================================= */
 
 @media (min-width: 640px) and (max-width: 767px) {
 
-    .intro {
-        padding: 90px 25px;
-    }
-
-    .Abt-unlock {
-        grid-template-columns: 1fr 1fr;
-        gap: 35px;
-    }
-
     .service-intro-video-wrapper {
-        border-radius: 20px;
+        aspect-ratio: 4 / 5;
     }
 
     .hero-video {
-        min-height: 350px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
 
 /* =========================================================
-   768px → 1023px
    LARGE TABLETS
+   768px → 1023px
    ========================================================= */
 
 @media (min-width: 768px) and (max-width: 1023px) {
 
-    .intro {
-        padding: 110px 30px;
-    }
-
-    .Abt-unlock {
-        grid-template-columns: 1fr 1fr;
-        gap: 45px;
-    }
-
     .service-intro-video-wrapper {
-        border-radius: 22px;
+        aspect-ratio: 4 / 5;
     }
 
     .hero-video {
-        min-height: 420px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
 
 /* =========================================================
+   LAPTOP
    1024px → 1199px
-   LAPTOP / SMALL DESKTOP
    ========================================================= */
 
 @media (min-width: 1024px) and (max-width: 1199px) {
-
-    .intro {
-        padding: 130px 40px;
-    }
-
-    .Abt-unlock {
-        grid-template-columns: 1fr 1fr;
-        gap: 55px;
-    }
 
     .hero-video {
         min-height: 500px;
@@ -1810,20 +1725,11 @@
 
 
 /* =========================================================
-   1200px+
    LARGE DESKTOP
+   1200px+
    ========================================================= */
 
 @media (min-width: 1200px) {
-
-    .intro {
-        padding: 150px 0;
-    }
-
-    .Abt-unlock {
-        grid-template-columns: 1fr 1fr;
-        gap: 60px;
-    }
 
     .hero-video {
         min-height: 550px;
